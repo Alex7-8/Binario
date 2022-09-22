@@ -15,8 +15,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
-
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <!-- Vendor CSS Files -->
+
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -48,8 +49,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about-us">About</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about-us">Binario a Texto</a></li>
           <li><a class="nav-link scrollto" href="#features">Features</a></li>
           <li><a class="nav-link scrollto" href="#screenshots">Screenshots</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
@@ -80,11 +81,21 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
+  <section style="flex: auto;"id="hero">
     <div class="hero-container" data-aos="fade-in">
       <h1>Welcome to eStartup</h1>
       <h2>Elegant Bootstrap Template for Startups, Apps &amp; more...</h2>
-      <img src="assets/img/hero-img.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
+      <div>
+        <input  id="bin" type="text">
+      
+        <button onclick="obtener()">Traducir</button>
+        
+      </div>
+      <label for="">Resultado</label>
+      <textarea name="" id="resultado" cols="36" rows="10"></textarea>
+      <label for="">Resultado</label>
+      <textarea name="" id="result" cols="36" rows="10"></textarea>
+      <img style="float: inline-start;" src="assets/img/hero-img.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
       <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
       <div class="btns">
         <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
@@ -778,6 +789,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/js.js"></script>
 
 </body>
 
