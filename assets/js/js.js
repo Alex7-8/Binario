@@ -1026,7 +1026,7 @@ var num = "";
             a = a + "159";
         }else if(ctex[i] == "á"){
             a = a + "160";
-        }else if(ctex[i] == "¡"){
+        }else if(ctex[i] == "í"){
             a = a + "161";
         }else if(ctex[i] == "¢"){
             a = a + "162";
@@ -1218,7 +1218,7 @@ var num = "";
             a = a + "255";
         }
             bx = a
-      //  console.log(bx)
+        console.log(a)
 
         
             if(bx >= 128){
