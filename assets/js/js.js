@@ -1028,7 +1028,7 @@ var num = "";
             a = a + "160";
         }else if(ctex[i] == "í"){
             a = a + "161";
-        }else if(ctex[i] == "¢"){
+        }else if(ctex[i] == "ó"){
             a = a + "162";
         }else if(ctex[i] == "ú"){
             a = a + "163";
