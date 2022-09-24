@@ -1,18 +1,46 @@
 
 //const resultado = [];
 var res="";
+var rest = "";
 window.addEventListener('load', function(){
  const resultado = document.getElementById("resultado").value;
  const result = document.getElementById("result").value;
+
+ const textobin = document.getElementById("textobin").value;
+ const bintexto = document.getElementById("bintexto").value;
 });
-function obtener(){
+function obtenerbt(){
+    var bin = document.getElementById("bin").value;
+    conversion(bin);
+
+}
+
+function obtenertb(){
+    var bin = document.getElementById("text").value;
+    
+   conversiontexto(bin);
+
+}
+
+function obtenerbd(){
     var bin = document.getElementById("bin").value;
     
     //console.log(bin);
    // bucle(bin);
-   conversion(bin);
+  // conversion(bin);
+   //conversiontexto(bin);
+   decimal(bin);
 }
-
+function obtenerdb(){
+    var bin = document.getElementById("bin").value;
+    
+    //console.log(bin);
+   // bucle(bin);
+  // conversion(bin);
+   //conversiontexto(bin);
+   decimal(bin);
+}
+/**convertir binario a decimal **/
 function bucle(bin){
 
     var ax = "";
@@ -72,7 +100,7 @@ function bucle(bin){
 resultado.textContent = `${ax}`;
 }
 
-
+/**convertir binario a texto **/
 function conversion(bin){
     var num= '';
     var tex="";
@@ -100,7 +128,7 @@ function conversion(bin){
 
         for(let i = ax.length -1; i >=0; i-- ){
                // console.log(con);
-             if(ax[i] == 1 && con == 0){
+                if(ax[i] == 1 && con == 0){
                  ntex = ntex  + 1;
                  }else if(ax[i]  == 1 && con == 1){
                      ntex  = ntex  + 2;
@@ -667,6 +695,720 @@ function conversion(bin){
   /*
     
     */
+}
+
+/**convertir texto a binario **/
+function conversiontexto(ctex){
+var a = "";
+var bx = "";
+var cx = "";
+var rx = "";
+var num = "";
+    for(let i = 0; i< ctex.length; i++){
+        if(ctex[i] == "NULL"){
+            a = a + "0";
+            console.log("aqui")
+        }else if(ctex[i] == "SOH"){
+            a = a + "1";
+        }else if(ctex[i] == "STX"){
+            a = a + "2";
+        }else if(ctex[i] == "ETX"){
+            a = a + "3";
+        }else if(ctex[i] == "EOT"){
+            a = a + "4";
+        }else if(ctex[i] == "ENQ"){  
+            a = a + "5";
+        }else if(ctex[i] == "ACK"){
+            a = a + "6";
+        }else if(ctex[i] == "BEL"){
+            a = a + "7";
+        }else if(ctex[i] == "BS"){
+            a = a + "8";
+        }else if(ctex[i] == "HT"){
+            a = a + "9";
+        }else if(ctex[i] == "LF"){
+            a = a + "10";
+        }else if(ctex[i] == "VT"){
+            a = a + "11";
+        }else if(ctex[i] == "FF"){
+            a = a + "12";
+        }else if(ctex[i] == "CR"){
+            a = a + "13";
+        }else if(ctex[i] == "SO"){
+            a = a + "14";
+        }else if(ctex[i] == "SI"){
+            a = a + "15";
+        }else if(ctex[i] == "DLE"){
+            a = a + "16";
+        }else if(ctex[i] == "DC1"){
+            a = a + "17";
+        }else if(ctex[i] == "DC2"){
+            a = a + "18";
+        }else if(ctex[i] == "DC3"){
+            a = a + "19";
+        }else if(ctex[i] == "DC4"){
+            a = a + "20";
+        }else if(ctex[i] == "NAK"){
+            a = a + "21";
+        }else if(ctex[i] == "SYN"){
+            a = a + "22";
+        }else if(ctex[i] == "ETB"){
+            a = a + "23";
+        }else if(ctex[i] == "CAN"){
+            a = a + "24";
+        }else if(ctex[i] == "EM"){
+            a = a + "25";
+        }else if(ctex[i] == "SUB"){
+            a = a + "26";
+        }else if(ctex[i] == "ESC"){
+            a = a + "27";
+        }else if(ctex[i] == "FS"){
+            a = a + "28";
+        }else if(ctex[i] == "GS"){
+            a = a + "29";
+        }else if(ctex[i] == "RS"){
+            a = a + "30";
+        }else if(ctex[i] == "US"){
+            a = a + "31";
+        }else if(ctex[i] == " "){
+            a = a + "32";
+        }else if(ctex[i] == "!"){
+            a = a + "33";
+        }else if(ctex[i] == '"'){
+            a = a + "34";
+        }else if(ctex[i] == "#"){
+            a = a + "35";
+        }else if(ctex[i] == "$"){
+            a = a + "36";
+        }else if(ctex[i] == "%"){
+            a = a + "37";
+        }else if(ctex[i] == "&"){
+            a = a + "38";
+        }else if(ctex[i] == "'"){
+            a = a + "39";
+        }else if(ctex[i] == "("){
+            a = a + "40";
+        }else if(ctex[i] == ")"){
+            a = a + "41";
+        }else if(ctex[i] == "*"){
+            a = a + "42";
+        }else if(ctex[i] == "+"){
+            a = a + "43";
+        }else if(ctex[i] == ","){
+            a = a + "44";
+        }else if(ctex[i] == "-"){
+            a = a + "45";
+        }else if(ctex[i] == "."){
+            a = a + "46";
+        }else if(ctex[i] == "/"){
+            a = a + "47";
+        }else if(ctex[i] == "0"){
+            a = a + "48";
+        }else if(ctex[i] == "1"){
+            a = a + "49";
+        }else if(ctex[i] == "2"){
+            a = a + "50";
+        }else if(ctex[i] == "3"){
+            a = a + "51";
+        }else if(ctex[i] == "4"){
+            a = a + "52";
+        }else if(ctex[i] == "5"){
+            a = a + "53";
+        }else if(ctex[i] == "6"){
+            a = a + "54";
+        }else if(ctex[i] == "7"){
+            a = a + "55";
+        }else if(ctex[i] == "8"){
+            a = a + "56";
+        }else if(ctex[i] == "9"){
+            a = a + "57";
+        }else if(ctex[i] == ":"){
+            a = a + "58";
+        }else if(ctex[i] == ";"){
+            a = a + "59";
+        }else if(ctex[i] == "<"){
+            a = a + "60";
+        }else if(ctex[i] == "="){
+            a = a + "61";
+        }else if(ctex[i] == ">"){
+            a = a + "62";
+        }else if(ctex[i] == "?"){
+            a = a + "63";
+        }else if(ctex[i] == "@"){
+            a = a + "64";
+        }else if(ctex[i] == "A"){
+            a = a + "65";
+        }else if(ctex[i] == "B"){
+            a = a + "66";
+        }else if(ctex[i] == "C"){
+            a = a + "67";
+        }else if(ctex[i] == "D"){
+            a = a + "68";
+        }else if(ctex[i] == "E"){
+            a = a + "69";
+        }else if(ctex[i] == "F"){
+            a = a + "70";
+        }else if(ctex[i] == "G"){
+            a = a + "71";
+        }else if(ctex[i] == "H"){
+            a = a + "72";
+        }else if(ctex[i] == "I"){
+            a = a + "73";
+        }else if(ctex[i] == "J"){
+            a = a + "74";
+        }else if(ctex[i] == "K"){
+            a = a + "75";
+        }else if(ctex[i] == "L"){
+            a = a + "76";
+        }else if(ctex[i] == "M"){
+            a = a + "77";
+        }else if(ctex[i] == "N"){
+            a = a + "78";
+        }else if(ctex[i] == "O"){
+            a = a + "79";
+        }else if(ctex[i] == "P"){
+            a = a + "80";
+        }else if(ctex[i] == "Q"){
+            a = a + "81";
+        }else if(ctex[i] == "R"){
+            a = a + "82";
+        }else if(ctex[i] == "S"){
+            a = a + "83";
+        }else if(ctex[i] == "T"){
+            a = a + "84";
+        }else if(ctex[i] == "U"){
+            a = a + "85";
+        }else if(ctex[i] == "V"){
+            a = a + "86";
+        }else if(ctex[i] == "W"){
+            a = a + "87";
+        }else if(ctex[i] == "X"){
+            a = a + "88";
+        }else if(ctex[i] == "Y"){
+            a = a + "89";
+        }else if(ctex[i] == "Z"){
+            a = a + "90";
+        }else if(ctex[i] == "["){
+            a = a + "91";
+        }else if(ctex[i] == "\""){
+            a = a + "92";
+        }else if(ctex[i] == "]"){
+            a = a + "93";
+        }else if(ctex[i] == "^"){
+            a = a + "94";
+        }else if(ctex[i] == "_"){
+            a = a + "95";
+        }else if(ctex[i] == "`"){
+            a = a + "96";
+        }else if(ctex[i] == "a"){
+            a = a + "97";
+        }else if(ctex[i] == "b"){
+            a = a + "98";
+        }else if(ctex[i] == "c"){
+            a = a + "99";
+        }else if(ctex[i] == "d"){    
+            a = a + "100";
+        }else if(ctex[i] == "e"){
+            a = a + "101";
+        }else if(ctex[i] == "f"){
+            a = a + "102";
+        }else if(ctex[i] == "g"){
+            a = a + "103";
+        }else if(ctex[i] == "h"){
+            a = a + "104";
+        }else if(ctex[i] == "i"){
+            a = a + "105";
+        }else if(ctex[i] == "j"){
+            a = a + "106";
+        }else if(ctex[i] == "k"){
+            a = a + "107";
+        }else if(ctex[i] == "l"){
+            a = a + "108";
+        }else if(ctex[i] == "m"){
+            a = a + "109";
+        }else if(ctex[i] == "n"){
+            a = a + "110";
+        }else if(ctex[i] == "o"){
+            a = a + "111";
+        }else if(ctex[i] == "p"){
+            a = a + "112";
+        }else if(ctex[i] == "q"){
+            a = a + "113";
+        }else if(ctex[i] == "r"){
+            a = a + "114";
+        }else if(ctex[i] == "s"){
+            a = a + "115";
+        }else if(ctex[i] == "t"){
+            a = a + "116";
+        }else if(ctex[i] == "u"){
+            a = a + "117";
+        }else if(ctex[i] == "v"){
+            a = a + "118";
+        }else if(ctex[i] == "w"){
+            a = a + "119";
+        }else if(ctex[i] == "x"){
+            a = a + "120";
+        }else if(ctex[i] == "y"){
+            a = a + "121";
+        }else if(ctex[i] == "z"){
+            a = a + "122";
+        }else if(ctex[i] == "{"){
+            a = a + "123";
+        }else if(ctex[i] == "|"){
+            a = a + "124";
+        }else if(ctex[i] == "}"){
+            a = a + "125";
+        }else if(ctex[i] == "~"){
+            a = a + "126";
+        }else if(ctex[i] == "Ç"){
+            a = a + "128";
+        }else if(ctex[i] == "ü"){
+            a = a + "129";
+        }else if(ctex[i] == "é"){
+            a = a + "130";
+        }else if(ctex[i] == "â"){
+            a = a + "131";
+        }else if(ctex[i] == "ä"){
+            a = a + "132";
+        }else if(ctex[i] == "à"){
+            a = a + "133";
+        }else if(ctex[i] == "å"){
+            a = a + "134";
+        }else if(ctex[i] == "ç"){
+            a = a + "135";
+        }else if(ctex[i] == "ê"){
+            a = a + "136";
+        }else if(ctex[i] == "ë"){
+            a = a + "137";
+        }else if(ctex[i] == "è"){
+            a = a + "138";
+        }else if(ctex[i] == "ï"){
+            a = a + "139";
+        }else if(ctex[i] == "î"){
+            a = a + "140";
+        }else if(ctex[i] == "ì"){
+            a = a + "141";
+        }else if(ctex[i] == "Ä"){
+            a = a + "142";
+        }else if(ctex[i] == "Å"){
+            a = a + "143";
+        }else if(ctex[i] == "É"){
+            a = a + "144";
+        }else if(ctex[i] == "æ"){
+            a = a + "145";
+        }else if(ctex[i] == "Æ"){
+            a = a + "146";
+        }else if(ctex[i] == "ô"){
+            a = a + "147";
+        }else if(ctex[i] == "ö"){
+            a = a + "148";
+        }else if(ctex[i] == "ò"){
+            a = a + "149";
+        }else if(ctex[i] == "û"){
+            a = a + "150";
+        }else if(ctex[i] == "ù"){
+            a = a + "151";
+        }else if(ctex[i] == "ÿ"){
+            a = a + "152";
+        }else if(ctex[i] == "Ö"){
+            a = a + "153";
+        }else if(ctex[i] == "Ü"){
+            a = a + "154";
+        }else if(ctex[i] == "ø"){
+            a = a + "155";
+        }else if(ctex[i] == "£"){
+            a = a + "156";
+        }else if(ctex[i] == "Ø"){
+            a = a + "157";
+        }else if(ctex[i] == "×"){
+            a = a + "158";
+        }else if(ctex[i] == "ƒ"){
+            a = a + "159";
+        }else if(ctex[i] == "á"){
+            a = a + "160";
+        }else if(ctex[i] == "¡"){
+            a = a + "161";
+        }else if(ctex[i] == "¢"){
+            a = a + "162";
+        }else if(ctex[i] == "£"){
+            a = a + "163";
+        }else if(ctex[i] == "¤"){
+            a = a + "164";
+        }else if(ctex[i] == "¥"){
+            a = a + "165";
+        }else if(ctex[i] == "¦"){
+            a = a + "166";
+        }else if(ctex[i] == "§"){
+            a = a + "167";
+        }else if(ctex[i] == "¨"){
+            a = a + "168";
+        }else if(ctex[i] == "©"){
+            a = a + "169";
+        }else if(ctex[i] == "ª"){
+            a = a + "170";
+        }else if(ctex[i] == "«"){
+            a = a + "171";
+        }else if(ctex[i] == "¬"){
+            a = a + "172";
+        }else if(ctex[i] == "­"){
+            a = a + "173";
+        }else if(ctex[i] == "®"){
+            a = a + "174";
+        }else if(ctex[i] == "¯"){
+            a = a + "175";
+        }else if(ctex[i] == "°"){
+            a = a + "176";
+        }else if(ctex[i] == "±"){
+            a = a + "177";
+        }else if(ctex[i] == "²"){
+            a = a + "178";
+        }else if(ctex[i] == "³"){
+            a = a + "179";
+        }else if(ctex[i] == "´"){
+            a = a + "180";
+        }else if(ctex[i] == "µ"){
+            a = a + "181";
+        }else if(ctex[i] == "¶"){
+            a = a + "182";
+        }else if(ctex[i] == "·"){
+            a = a + "183";
+        }else if(ctex[i] == "¸"){
+            a = a + "184";
+        }else if(ctex[i] == "¹"){
+            a = a + "185";
+        }else if(ctex[i] == "º"){
+            a = a + "186";
+        }else if(ctex[i] == "»"){
+            a = a + "187";
+        }else if(ctex[i] == "¼"){
+            a = a + "188";
+        }else if(ctex[i] == "½"){
+            a = a + "189";
+        }else if(ctex[i] == "¾"){
+            a = a + "190";
+        }else if(ctex[i] == "¿"){
+            a = a + "191";
+        }else if(ctex[i] == "À"){
+            a = a + "192";
+        }else if(ctex[i] == "Á"){
+            a = a + "193";
+        }else if(ctex[i] == "Â"){
+            a = a + "194";
+        }else if(ctex[i] == "Ã"){
+            a = a + "195";
+        }else if(ctex[i] == "Ä"){
+            a = a + "196";
+        }else if(ctex[i] == "Å"){
+            a = a + "197";
+        }else if(ctex[i] == "Æ"){
+            a = a + "198";
+        }else if(ctex[i] == "Ç"){
+            a = a + "199";
+        }else if(ctex[i] == "È"){
+            a = a + "200";
+        }else if(ctex[i] == "É"){
+            a = a + "201";
+        }else if(ctex[i] == "Ê"){
+            a = a + "202";
+        }else if(ctex[i] == "Ë"){
+            a = a + "203";
+        }else if(ctex[i] == "Ì"){
+            a = a + "204";
+        }else if(ctex[i] == "Í"){
+            a = a + "205";
+        }else if(ctex[i] == "Î"){
+            a = a + "206";
+        }else if(ctex[i] == "Ï"){    
+            a = a + "207";
+        }else if(ctex[i] == "Ð"){
+            a = a + "208";
+        }else if(ctex[i] == "Ñ"){
+            a = a + "209";
+        }else if(ctex[i] == "Ò"){
+            a = a + "210";
+        }else if(ctex[i] == "Ó"){
+            a = a + "211";
+        }else if(ctex[i] == "Ô"){
+            a = a + "212";
+        }else if(ctex[i] == "Õ"){
+            a = a + "213";
+        }else if(ctex[i] == "Ö"){
+            a = a + "214";
+        }else if(ctex[i] == "×"){
+            a = a + "215";
+        }else if(ctex[i] == "Ø"){
+            a = a + "216";
+        }else if(ctex[i] == "Ù"){
+            a = a + "217";
+        }else if(ctex[i] == "Ú"){
+            a = a + "218";
+        }else if(ctex[i] == "Û"){
+            a = a + "219";
+        }else if(ctex[i] == "Ü"){
+            a = a + "220";
+        }else if(ctex[i] == "Ý"){
+            a = a + "221";
+        }else if(ctex[i] == "Þ"){
+            a = a + "222";
+        }else if(ctex[i] == "ß"){
+            a = a + "223";
+        }else if(ctex[i] == "à"){
+            a = a + "224";
+        }else if(ctex[i] == "á"){
+            a = a + "225";
+        }else if(ctex[i] == "â"){
+            a = a + "226";
+        }else if(ctex[i] == "ã"){
+            a = a + "227";
+        }else if(ctex[i] == "ä"){
+            a = a + "228";
+        }else if(ctex[i] == "å"){
+            a = a + "229";
+        }else if(ctex[i] == "æ"){
+            a = a + "230";
+        }else if(ctex[i] == "ç"){
+            a = a + "231";
+        }else if(ctex[i] == "è"){
+            a = a + "232";
+        }else if(ctex[i] == "é"){
+            a = a + "233";
+        }else if(ctex[i] == "ê"){
+            a = a + "234";
+        }else if(ctex[i] == "ë"){
+            a = a + "235";
+        }else if(ctex[i] == "ì"){
+            a = a + "236";
+        }else if(ctex[i] == "í"){
+            a = a + "237";
+        }else if(ctex[i] == "î"){    
+            a = a + "238";
+        }else if(ctex[i] == "ï"){
+            a = a + "239";
+        }else if(ctex[i] == "ð"){
+            a = a + "240";
+        }else if(ctex[i] == "ñ"){
+            a = a + "241";
+        }else if(ctex[i] == "ò"){
+            a = a + "242";
+        }else if(ctex[i] == "ó"){
+            a = a + "243";
+        }else if(ctex[i] == "ô"){
+            a = a + "244";
+        }else if(ctex[i] == "õ"){
+            a = a + "245";
+        }else if(ctex[i] == "ö"){
+            a = a + "246";
+        }else if(ctex[i] == "÷"){
+            a = a + "247";
+        }else if(ctex[i] == "ø"){
+            a = a + "248";
+        }else if(ctex[i] == "ù"){
+            a = a + "249";
+        }else if(ctex[i] == "ú"){
+            a = a + "250";
+        }else if(ctex[i] == "û"){
+            a = a + "251";
+        }else if(ctex[i] == "ü"){
+            a = a + "252";
+        }else if(ctex[i] == "ý"){
+            a = a + "253";
+        }else if(ctex[i] == "þ"){
+            a = a + "254";
+        }else if(ctex[i] == "ÿ"){
+            a = a + "255";
+        }
+            bx = a
+      //  console.log(bx)
+
+        
+            if(bx >= 128){
+                bx = bx - 128;
+                cx = cx + "1";
+            }else{
+                cx = cx + "0";
+ 
+               
+            }
+            
+            if(bx >= 64){
+                bx = bx - 64;
+                cx = cx + "1";
+    
+            }else {
+                cx = cx + "0";
+             
+            }
+            
+            if(bx >= 32){
+                bx = bx - 32;
+                cx = cx + "1";
+   
+            }else{
+                cx = cx + "0";
+          
+            }
+            if(bx >= 16){
+                bx = bx - 16;
+                cx = cx + "1";
+
+            }else{
+                cx = cx + "0";
+            }
+             if(bx >= 8){
+                bx = bx - 8;
+                cx = cx + "1";
+            }else{
+                cx = cx + "0";
+
+            }
+            if(bx >= 4){
+                bx = bx - 4;
+                cx = cx + "1";
+            }else{
+                cx = cx + "0";
+
+           
+            }
+            if(bx >= 2){
+                bx = bx - 2;
+                cx = cx + "1";
+            }else{
+                cx = cx + "0";
+
+       
+            }
+            if(bx >= 1){
+                bx = bx - 1;
+                cx = cx + "1";
+
+            }else{
+                cx = cx + "0";
+            }
+            
+            if(cx.length == 8){
+               rx = rx + cx + ' ';
+               num = num + '「'+`${a}`+ '→' + `${cx}`+'」' ;
+            }
+    
+            
+          //  console.log(bx)
+
+
+        rest = rest+cx+' ';
+        //console.log(rest);
+        a = '';
+       // console.log(cx.length);
+       
+        cx = '';
+       
+        //console.log(ctex[i])
+    }
+      // console.log(rx)
+        
+        textobin.textContent = `${num}`;
+        bintexto.textContent = `${rest}`;
+        rest ="";
+
+}
+
+/**convertir decimal a binario **/
+function decimal(dbin) {
+var bx = dbin;
+var cx = "";
+var rx = "";
+var a = "";
+    /* if(bx >= 2048){
+        bx = bx - 2048;
+        cx = cx + "1";
+        }else{
+        cx = cx + "0";   
+        }
+    if(bx >= 1024){
+    bx = bx - 1024;
+    cx = cx + "1";
+    }else{
+    cx = cx + "0";   
+    }
+    if(bx >= 512){
+    bx = bx - 512;
+    cx = cx + "1";
+    }else{
+    cx = cx + "0";   
+    }
+    if(bx >= 256){
+     bx = bx - 256;
+     cx = cx + "1";
+        }else{
+        cx = cx + "0";   
+    } */
+
+    if(bx >= 128){
+        bx = bx - 128;
+        cx = cx + "1";
+    }else{
+        cx = cx + "0";   
+    }
+    
+    if(bx >= 64){
+        bx = bx - 64;
+        cx = cx + "1";
+
+    }else {
+        cx = cx + "0";
+     
+    }
+    
+    if(bx >= 32){
+        bx = bx - 32;
+        cx = cx + "1";
+
+    }else{
+        cx = cx + "0";
+  
+    }
+    if(bx >= 16){
+        bx = bx - 16;
+        cx = cx + "1";
+
+    }else{
+        cx = cx + "0";
+    }
+     if(bx >= 8){
+        bx = bx - 8;
+        cx = cx + "1";
+    }else{
+        cx = cx + "0";
+
+    }
+    if(bx >= 4){
+        bx = bx - 4;
+        cx = cx + "1";
+    }else{
+        cx = cx + "0";
+
+   
+    }
+    if(bx >= 2){
+        bx = bx - 2;
+        cx = cx + "1";
+    }else{
+        cx = cx + "0";
+
+
+    }
+    if(bx >= 1){
+        bx = bx - 1;
+        cx = cx + "1";
+
+    }else{
+        cx = cx + "0";
+    }
+    
+ /*     if(cx.length == 8){
+      a = a + cx + ' ';
+    } */
+    rx = rx + cx + ' ';
+    console.log(rx)
 }
 
 
