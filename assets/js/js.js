@@ -518,7 +518,7 @@ function conversion(bin){
                          }else if(ntex == 183){
                              tex = "À";
                          }else if(ntex == 184){
-                             tex = "©";
+                             tex = "©"
                          }else if(ntex == 185){
                              tex = "╣";
                          }else if(ntex == 186){
@@ -1030,191 +1030,191 @@ var num = "";
             a = a + "161";
         }else if(ctex[i] == "¢"){
             a = a + "162";
-        }else if(ctex[i] == "£"){
-            a = a + "163";
-        }else if(ctex[i] == "¤"){
-            a = a + "164";
-        }else if(ctex[i] == "¥"){
-            a = a + "165";
-        }else if(ctex[i] == "¦"){
-            a = a + "166";
-        }else if(ctex[i] == "§"){
-            a = a + "167";
-        }else if(ctex[i] == "¨"){
-            a = a + "168";
-        }else if(ctex[i] == "©"){
-            a = a + "169";
-        }else if(ctex[i] == "ª"){
-            a = a + "170";
-        }else if(ctex[i] == "«"){
-            a = a + "171";
-        }else if(ctex[i] == "¬"){
-            a = a + "172";
-        }else if(ctex[i] == "­"){
-            a = a + "173";
-        }else if(ctex[i] == "®"){
-            a = a + "174";
-        }else if(ctex[i] == "¯"){
-            a = a + "175";
-        }else if(ctex[i] == "°"){
-            a = a + "176";
-        }else if(ctex[i] == "±"){
-            a = a + "177";
-        }else if(ctex[i] == "²"){
-            a = a + "178";
-        }else if(ctex[i] == "³"){
-            a = a + "179";
-        }else if(ctex[i] == "´"){
-            a = a + "180";
-        }else if(ctex[i] == "µ"){
-            a = a + "181";
-        }else if(ctex[i] == "¶"){
-            a = a + "182";
-        }else if(ctex[i] == "·"){
-            a = a + "183";
-        }else if(ctex[i] == "¸"){
-            a = a + "184";
-        }else if(ctex[i] == "¹"){
-            a = a + "185";
-        }else if(ctex[i] == "º"){
-            a = a + "186";
-        }else if(ctex[i] == "»"){
-            a = a + "187";
-        }else if(ctex[i] == "¼"){
-            a = a + "188";
-        }else if(ctex[i] == "½"){
-            a = a + "189";
-        }else if(ctex[i] == "¾"){
-            a = a + "190";
-        }else if(ctex[i] == "¿"){
-            a = a + "191";
-        }else if(ctex[i] == "À"){
-            a = a + "192";
-        }else if(ctex[i] == "Á"){
-            a = a + "193";
-        }else if(ctex[i] == "Â"){
-            a = a + "194";
-        }else if(ctex[i] == "Ã"){
-            a = a + "195";
-        }else if(ctex[i] == "Ä"){
-            a = a + "196";
-        }else if(ctex[i] == "Å"){
-            a = a + "197";
-        }else if(ctex[i] == "Æ"){
-            a = a + "198";
-        }else if(ctex[i] == "Ç"){
-            a = a + "199";
-        }else if(ctex[i] == "È"){
-            a = a + "200";
-        }else if(ctex[i] == "É"){
-            a = a + "201";
-        }else if(ctex[i] == "Ê"){
-            a = a + "202";
-        }else if(ctex[i] == "Ë"){
-            a = a + "203";
-        }else if(ctex[i] == "Ì"){
-            a = a + "204";
-        }else if(ctex[i] == "Í"){
-            a = a + "205";
-        }else if(ctex[i] == "Î"){
-            a = a + "206";
-        }else if(ctex[i] == "Ï"){    
-            a = a + "207";
-        }else if(ctex[i] == "Ð"){
-            a = a + "208";
-        }else if(ctex[i] == "Ñ"){
-            a = a + "209";
-        }else if(ctex[i] == "Ò"){
-            a = a + "210";
-        }else if(ctex[i] == "Ó"){
-            a = a + "211";
-        }else if(ctex[i] == "Ô"){
-            a = a + "212";
-        }else if(ctex[i] == "Õ"){
-            a = a + "213";
-        }else if(ctex[i] == "Ö"){
-            a = a + "214";
-        }else if(ctex[i] == "×"){
-            a = a + "215";
-        }else if(ctex[i] == "Ø"){
-            a = a + "216";
-        }else if(ctex[i] == "Ù"){
-            a = a + "217";
-        }else if(ctex[i] == "Ú"){
-            a = a + "218";
-        }else if(ctex[i] == "Û"){
-            a = a + "219";
-        }else if(ctex[i] == "Ü"){
-            a = a + "220";
-        }else if(ctex[i] == "Ý"){
-            a = a + "221";
-        }else if(ctex[i] == "Þ"){
-            a = a + "222";
-        }else if(ctex[i] == "ß"){
-            a = a + "223";
-        }else if(ctex[i] == "à"){
-            a = a + "224";
-        }else if(ctex[i] == "á"){
-            a = a + "225";
-        }else if(ctex[i] == "â"){
-            a = a + "226";
-        }else if(ctex[i] == "ã"){
-            a = a + "227";
-        }else if(ctex[i] == "ä"){
-            a = a + "228";
-        }else if(ctex[i] == "å"){
-            a = a + "229";
-        }else if(ctex[i] == "æ"){
-            a = a + "230";
-        }else if(ctex[i] == "ç"){
-            a = a + "231";
-        }else if(ctex[i] == "è"){
-            a = a + "232";
-        }else if(ctex[i] == "é"){
-            a = a + "233";
-        }else if(ctex[i] == "ê"){
-            a = a + "234";
-        }else if(ctex[i] == "ë"){
-            a = a + "235";
-        }else if(ctex[i] == "ì"){
-            a = a + "236";
-        }else if(ctex[i] == "í"){
-            a = a + "237";
-        }else if(ctex[i] == "î"){    
-            a = a + "238";
-        }else if(ctex[i] == "ï"){
-            a = a + "239";
-        }else if(ctex[i] == "ð"){
-            a = a + "240";
-        }else if(ctex[i] == "ñ"){
-            a = a + "241";
-        }else if(ctex[i] == "ò"){
-            a = a + "242";
-        }else if(ctex[i] == "ó"){
-            a = a + "243";
-        }else if(ctex[i] == "ô"){
-            a = a + "244";
-        }else if(ctex[i] == "õ"){
-            a = a + "245";
-        }else if(ctex[i] == "ö"){
-            a = a + "246";
-        }else if(ctex[i] == "÷"){
-            a = a + "247";
-        }else if(ctex[i] == "ø"){
-            a = a + "248";
-        }else if(ctex[i] == "ù"){
-            a = a + "249";
         }else if(ctex[i] == "ú"){
-            a = a + "250";
-        }else if(ctex[i] == "û"){
-            a = a + "251";
-        }else if(ctex[i] == "ü"){
-            a = a + "252";
-        }else if(ctex[i] == "ý"){
-            a = a + "253";
+            a = a + "163";
+        }else if(ctex[i] == "ñ"){
+            a = a + "164";
+        }else if(ctex[i] == "Ñ"){
+            a = a + "165";
+        }else if(ctex[i] == "ª"){
+            a = a + "166";
+        }else if(ctex[i] == "º"){
+            a = a + "167";
+        }else if(ctex[i] == "¿"){
+            a = a + "168";
+        }else if(ctex[i] == "®"){
+            a = a + "169";
+        }else if(ctex[i] == "¬"){
+            a = a + "170";
+        }else if(ctex[i] == "½"){
+            a = a + "171";
+        }else if(ctex[i] == "¼"){
+            a = a + "172";
+        }else if(ctex[i] == "¡"){
+            a = a + "173";
+        }else if(ctex[i] == "«"){
+            a = a + "174";
+        }else if(ctex[i] == "»"){
+            a = a + "175";
+        }else if(ctex[i] == "░"){
+            a = a + "176";
+        }else if(ctex[i] == "▒"){
+            a = a + "177";
+        }else if(ctex[i] == "▓"){
+            a = a + "178";
+        }else if(ctex[i] == "│"){
+            a = a + "179";
+        }else if(ctex[i] == "┤"){
+            a = a + "180";
+        }else if(ctex[i] == "Á"){
+            a = a + "181";
+        }else if(ctex[i] == "Â"){
+            a = a + "182";
+        }else if(ctex[i] == "À"){
+            a = a + "183";
+        }else if(ctex[i] == "©"){
+            a = a + "184";
+        }else if(ctex[i] == "╣"){
+            a = a + "185";
+        }else if(ctex[i] == "║"){
+            a = a + "186";
+        }else if(ctex[i] == "╗"){
+            a = a + "187";
+        }else if(ctex[i] == "╝"){
+            a = a + "188";
+        }else if(ctex[i] == "¢"){
+            a = a + "189";
+        }else if(ctex[i] == "¥"){
+            a = a + "190";
+        }else if(ctex[i] == "┐"){
+            a = a + "191";
+        }else if(ctex[i] == "└"){
+            a = a + "192";
+        }else if(ctex[i] == "┴"){
+            a = a + "193";
+        }else if(ctex[i] == "┬"){
+            a = a + "194";
+        }else if(ctex[i] == "├"){
+            a = a + "195";
+        }else if(ctex[i] == "─"){
+            a = a + "196";
+        }else if(ctex[i] == "┼"){
+            a = a + "197";
+        }else if(ctex[i] == "ã"){
+            a = a + "198";
+        }else if(ctex[i] == "Ã"){
+            a = a + "199";
+        }else if(ctex[i] == "╚"){
+            a = a + "200";
+        }else if(ctex[i] == "╔"){
+            a = a + "201";
+        }else if(ctex[i] == "╩"){
+            a = a + "202";
+        }else if(ctex[i] == "╦"){
+            a = a + "203";
+        }else if(ctex[i] == "╠"){
+            a = a + "204";
+        }else if(ctex[i] == "═"){
+            a = a + "205";
+        }else if(ctex[i] == "╬"){
+            a = a + "206";
+        }else if(ctex[i] == "¤"){    
+            a = a + "207";
+        }else if(ctex[i] == "ð"){
+            a = a + "208";
+        }else if(ctex[i] == "Ð"){
+            a = a + "209";
+        }else if(ctex[i] == "Ê"){
+            a = a + "210";
+        }else if(ctex[i] == "Ë"){
+            a = a + "211";
+        }else if(ctex[i] == "È"){
+            a = a + "212";
+        }else if(ctex[i] == "ı"){
+            a = a + "213";
+        }else if(ctex[i] == "Í"){
+            a = a + "214";
+        }else if(ctex[i] == "Î"){
+            a = a + "215";
+        }else if(ctex[i] == "Ï"){
+            a = a + "216";
+        }else if(ctex[i] == "┘"){
+            a = a + "217";
+        }else if(ctex[i] == "┌"){
+            a = a + "218";
+        }else if(ctex[i] == "█"){
+            a = a + "219";
+        }else if(ctex[i] == "▄"){
+            a = a + "220";
+        }else if(ctex[i] == "¦"){
+            a = a + "221";
+        }else if(ctex[i] == "Ì"){
+            a = a + "222";
+        }else if(ctex[i] == "▀"){
+            a = a + "223";
+        }else if(ctex[i] == "Ó"){
+            a = a + "224";
+        }else if(ctex[i] == "ß"){
+            a = a + "225";
+        }else if(ctex[i] == "Ô"){
+            a = a + "226";
+        }else if(ctex[i] == "Ò"){
+            a = a + "227";
+        }else if(ctex[i] == "õ"){
+            a = a + "228";
+        }else if(ctex[i] == "Õ"){
+            a = a + "229";
+        }else if(ctex[i] == "µ"){
+            a = a + "230";
         }else if(ctex[i] == "þ"){
+            a = a + "231";
+        }else if(ctex[i] == "Þ"){
+            a = a + "232";
+        }else if(ctex[i] == "Ú"){
+            a = a + "233";
+        }else if(ctex[i] == "Û"){
+            a = a + "234";
+        }else if(ctex[i] == "Ù"){
+            a = a + "235";
+        }else if(ctex[i] == "ý"){
+            a = a + "236";
+        }else if(ctex[i] == "Ý"){
+            a = a + "237";
+        }else if(ctex[i] == "¯"){    
+            a = a + "238";
+        }else if(ctex[i] == "´"){
+            a = a + "239";
+        }else if(ctex[i] == "≡"){
+            a = a + "240";
+        }else if(ctex[i] == "±"){
+            a = a + "241";
+        }else if(ctex[i] == "‗"){
+            a = a + "242";
+        }else if(ctex[i] == "¾"){
+            a = a + "243";
+        }else if(ctex[i] == "¶"){
+            a = a + "244";
+        }else if(ctex[i] == "§"){
+            a = a + "245";
+        }else if(ctex[i] == "÷"){
+            a = a + "246";
+        }else if(ctex[i] == "¸"){
+            a = a + "247";
+        }else if(ctex[i] == "°"){
+            a = a + "248";
+        }else if(ctex[i] == "¨"){
+            a = a + "249";
+        }else if(ctex[i] == "·"){
+            a = a + "250";
+        }else if(ctex[i] == "¹"){
+            a = a + "251";
+        }else if(ctex[i] == "³"){
+            a = a + "252";
+        }else if(ctex[i] == "²"){
+            a = a + "253";
+        }else if(ctex[i] == "■"){
             a = a + "254";
-        }else if(ctex[i] == "ÿ"){
+        }else if(ctex[i] == " "){
             a = a + "255";
         }
             bx = a
