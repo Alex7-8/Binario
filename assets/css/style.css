@@ -456,6 +456,10 @@ span {
   display: flex; 
   margin-top: 20px;
 }
+
+#hero img{
+  width: 100%;
+}
 @media (min-width: 1025px) {
   #hero {
     background-attachment: fixed;
