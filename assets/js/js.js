@@ -122,7 +122,7 @@ function conversion(bin){
     }
     if(n == 7 && v == 0){
         n = -1;
-        console.log(ax)
+      //  console.log(ax)
         
         v = 0;
 
@@ -663,14 +663,14 @@ function conversion(bin){
                              tex = " ";
                          }if(ntex > 0){
                             num = num + '「'+`${ntex}`+ '→' + `${tex}`+'」' ;
-                            console.log("a")
+                         //   console.log("a")
                             
                       }
                          res = res+tex;
-                         console.log(ntex)
+                       //  console.log(ntex)
                          ntex = 0;
                      }
-                     console.log(ntex);
+                  //   console.log(ntex);
 
                  }else if(ax[i] > 1 || ax[i] < 0){
                     console.log(ax)
@@ -1218,7 +1218,7 @@ var num = "";
             a = a + "255";
         }
             bx = a
-        console.log(a)
+        //console.log(a)
 
         
             if(bx >= 128){
