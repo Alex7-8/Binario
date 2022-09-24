@@ -63,11 +63,21 @@ h2{
   
 #text{
   margin-left: 21px;
+  width: 50%;
+ 
   
 }
 #ttb{
   margin-top: 0px;
+  width: 90%;
+
   }
+
+  #bin{
+    width: 50%;
+  }
+
+  
 
 }
 
